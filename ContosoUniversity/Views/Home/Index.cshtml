@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <h1>Contoso University</h1>
+</div>
+
+    <div class="row">
+
+            <div class="col-md-4">
+
+            <h2>Welcome!</h2>
+            <p>
+               This is site where you can locate courses, department, instructors, etc..
+            </p>
+        </div>
+
+
+        <div class="col-md-4">
+            <div data-bind="foreach:messages">
+                <div data-bind="text: $data"></div>
+            </div>
+
+            <h2>Wanna know more?</h2>
+            <p>Here are more infomrmation about what you can do to move forward</p>
+            <p><a class="btn btn-default" href="">See the tutorial &raquo;</a></p>
+        </div>
+
+    <div class="col-md-4">
+        <h2>Chat Room</h2>
+        <p>Have questions or just want to CHat?   </p>
+        <p><a class="btn btn-default" href="http://localhost:41787/Home/Chat">CHatRoom &raquo;</a></p>
+    </div>
+
+    </div>
